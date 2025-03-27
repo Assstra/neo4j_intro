@@ -1,10 +1,3 @@
-# Wikipedia Data analysis
-
-The goal of this activity is to analyze Wikipedia data using Spark. As an input, we have a wikipedia dump file in dat format.
-
-Here is the code:
-
-```scala
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
@@ -78,8 +71,3 @@ object WikipediaDataAnalysis extends App{
   spark.stop()
 
 }
-```
-
-## Results
-
-The first file, already present in 

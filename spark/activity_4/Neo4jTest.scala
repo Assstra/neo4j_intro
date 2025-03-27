@@ -1,6 +1,3 @@
-# Connect Spark to Neo4j
-
-```scala
 import org.apache.spark.sql.SparkSession
 
 object Neo4jTest {
@@ -33,8 +30,3 @@ object Neo4jTest {
     spark.stop()
   }
 }
-```
-
-Here is the result:
-
-![](neo4j_db_in_scala.png)

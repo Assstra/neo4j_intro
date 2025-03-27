@@ -1,10 +1,3 @@
-# Implementat Apache Spark File streaming
-
-The goal of this activity is to enable streaming from a Minio database.
-
-## Code
-
-```scala
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 
@@ -40,15 +33,3 @@ object SparkStreaming {
     query.awaitTermination()
   }
 }
-```
-
-## Results
-
-As we can see in the screenshot below, the first file present in Minio is read and the data is displayed in the console.  
-![](minio_1.png)
-
-We can see that as there are no new files in the Minio bucket, the program is waiting for new files to be added. The program will read the new files and display the data in the console.
-![](minio_2.png)
-
-Next, I manually upload a file to the Minio bucket. The file is read and the data is displayed in the console.
-![](minio_3.png)

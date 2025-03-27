@@ -1,10 +1,3 @@
-# Stack overflow data analysis
-
-The goal of this activity is to analyze Stack Overflow data using Spark. As an input, we have a stack overflow dump file in csv format.
-
-Here is the code:
-
-```scala
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
@@ -12,7 +5,7 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 object ReadCSV {
   def main(args: Array[String]): Unit = {
     // Path to the CSV data file
-    val csvDataFile = "./stackoverflow.csv"
+    val csvDataFile = "/home/linux_friendly/Documents/Others/Databases/neo4j_intro/activity_7/stackoverflow.csv"
 
     // Create a Spark session with custom configurations
     val spark = SparkSession.builder
@@ -93,20 +86,3 @@ object ReadCSV {
     spark.stop()
   }
 }
-```
-
-Here are the results:
-
-![](num_of_rows.png)
-
-Query 1: Retrieve schema of the dataset:
-
-![](schema.png)
-
-Query 2: Retrieve top 5 highest-scoring posts that have a tag:
-
-![](score_query.png)
-
-Query 3: Find the 10 most frequently used tags in the dataset:
-
-![](tags_query.png)

@@ -1,5 +1,7 @@
 # Run the spark quick start program on Kubernetes using Spark operator
 
+## How To
+
 Create the spark operator and MinIO database:
 
 ```bash
@@ -12,6 +14,8 @@ Create the SparkApplication & serviceAccount:
 k apply -f SparkApplication.yaml
 ```
 
-Here is the result:
+##  Results
+
+Here are the results from spark application logs:
 
 ![](loading_csv_from_minio.png)
