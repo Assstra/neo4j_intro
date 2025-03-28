@@ -79,7 +79,3 @@ object WikipediaDataAnalysis extends App{
 
 }
 ```
-
-## Results
-
-The first file, already present in 
